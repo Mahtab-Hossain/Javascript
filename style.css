@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0EAD6; /* egg-white / eggshell */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
