@@ -14,10 +14,16 @@ document.getElementById('task1').addEventListener('click', () => {
     const [a, b, c] = values;
     const resultEl = document.getElementById('result');
 
+    // Check if all numbers are equal
     if (a === b && b === c) {
-        resultEl.textContent = "Bigest number not found , all the number's are same";
+        resultEl.textContent = "Biggest number not found, all the numbers are same";
+    } 
+    // Find the biggest number without using Math.max()
+    else if (a >= b && a >= c) {
+        resultEl.textContent = `Biggest number is ${a}`;
+    } else if (b >= a && b >= c) {
+        resultEl.textContent = `Biggest number is ${b}`;
     } else {
-        const max = Math.max(a, b, c);
-        resultEl.textContent = `Biggest number is ${max}`;
+        resultEl.textContent = `Biggest number is ${c}`;
     }
 });
